@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas: Antibióticos e Vacinas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+        #game {
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #fff;
+        }
+        button {
+            display: block;
+            margin: 15px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Jogo de Perguntas: Antibióticos e Vacinas</h1>
+        <div id="question-container">
+            <p id="question">Clique em iniciar para começar o jogo!</p>
+            <button class="answer-btn hidden" id="answer1"></button>
+            <button class="answer-btn hidden" id="answer2"></button>
+        </div>
+        <button id="start-btn">Iniciar Jogo</button>
+        <p id="score">Pontuação: 0</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
